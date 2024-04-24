@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monaco', calibri;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #C1E1C1, #FFFDE7);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #FFF;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: 2px dashed #788063;
+    text-align: center;
+}
+.todo-app h2 {
+    color: #788063;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    justify-content: center;
+}
+img {
+    width: 150px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #C1E1C1;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border: 1px dashed #788063;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 16px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #FFFDE7;
+    color: #788063;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 1px dashed #788063;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #788063;;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+ul li span {
+    position:absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:#788063;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover {
+    background:#FFFDE7;
+    border-radius: 50px;
+    border: 1px dashed #788063;
+}
+.form-box {
+    width: 100%;
+    max-width: 540px;
+    background: #FFF;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: 2px dashed #788063;
+    text-align: center;
+}
+.form-box h1 {
+    color: #788063;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    justify-content: center;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #C1E1C1;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border: 1px dashed #788063;
+    max-height: 100px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+form p {
+    text-align: center;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #788063;
+}
+
+.input-group {
+    height: 280px;
+}
+
+.btn-field button.disable {
+    background:#C1E1C1;
+    color: #788063;
+}

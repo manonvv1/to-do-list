@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/20efba0c6d.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">       
+            <div class="form-box">
+                <h1 id="title">♡ Sign up now ♡</h1>
+                <img src="/images/flower.png" alt="flower">
+                <form>
+                    <div class="input-group">
+                        <div class="input-field" id="nameField">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" placeholder="♡ Your name ♡">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="♡ Your e-mail ♡">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="♡ Your password ♡">
+                        </div>
+                        <p>Lost password? <a href="#">Click here!</a></p>
+                    </div>
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn">♡ Sign up ♡</button>
+                        <button type="button" id="signinBtn" class="disable">♡ Sign in ♡</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+
+            let signupBtn = document.getElementById("signupBtn");
+            let signinBtn = document.getElementById("signinBtn");
+            let nameField = document.getElementById("nameField");
+            let title = document.getElementById("title");
+
+            signinBtn.onClick = function (){
+                nameField.style.maxHeight = "0";
+
+            }
+
+        </script>
+    </body>
+</html>
